@@ -1,0 +1,23 @@
+n=int(raw_input("enter limit"))
+strings=[]
+length=0
+for i in range(n):
+    strn=raw_input()
+    strings.append(strn)
+    if length<__len__(strn):
+        length=__len__(strn)
+strn=""
+for i in range(length):
+     test=strings[0][i]
+     flag=0
+     for k in strings:
+         if test!=k[i]:
+             flag=1
+             break
+     if flag==1:
+         break
+     else:
+         strn=strn+test
+print "longest prefix is",strn
+    
+    
