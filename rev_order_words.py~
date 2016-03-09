@@ -1,0 +1,14 @@
+string=raw_input("enter the string")
+words=string.split(" ")
+print words
+#words=words.reverse()
+print words
+#words=str(words)
+string=" "
+#string=" ".join(words)
+count=-1
+for i in words:
+    string=string+words[count]+" "
+    count=count-1
+
+print string

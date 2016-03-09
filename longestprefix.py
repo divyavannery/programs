@@ -4,7 +4,9 @@ length=0
 for i in range(n):
     strn=raw_input()
     strings.append(strn)
-    if length<len(strn):
+    if i==0:
+        length=len(strn)
+    if length>=len(strn):
         length=len(strn)
 strn=""
 for i in range(length):
